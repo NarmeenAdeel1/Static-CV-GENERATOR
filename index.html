@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CV Generator</h1>
+        
+        
+        <form id="cv-form">
+            <div>
+                <label for="Profile-Picture"> Profile Picture</label> <br>
+                <input type="file" id="Profile-Picture" accept="image"> <br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="education">Education:</label>
+                <input type="text" id="education" placeholder="Enter your education" required>
+            </div>
+            <div>
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" placeholder="Enter your skills" required>
+            </div>
+            <button type="submit">Generate CV</button>
+        </form>
+
+        
+        <div id="resume-output" style="display:none;">
+            <h2>Generated CV</h2>
+            <p><strong>Name:</strong> <span id="output-name"></span></p>
+            <p><strong>Email:</strong> <span id="output-email"></span></p>
+            <p><strong>Education:</strong> <span id="output-education"></span></p>
+            <p><strong>Skills:</strong> <span id="output-skills"></span></p>
+
+            <button id="toggle-skills">Toggle Skills</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
